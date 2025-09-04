@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyLearningProject.Enitities.People.Dto
 {
-    //[AutoMapFrom(typeof(Person)), AutoMapTo(typeof(Person))]
+    [AutoMapFrom(typeof(Person)), AutoMapTo(typeof(Person))]
     public class PersonDto : EntityDto<int>
     {
         public string FullName { get; set; }

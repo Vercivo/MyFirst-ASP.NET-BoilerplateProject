@@ -4,6 +4,7 @@ using MyLearningProject.Authorization.Users;
 using MyLearningProject.MultiTenancy;
 using Microsoft.EntityFrameworkCore;
 using MyLearningProject.Entities.People;
+using MyLearningProject.Entities.Books;
 
 namespace MyLearningProject.EntityFrameworkCore;
 
@@ -17,4 +18,6 @@ public class MyLearningProjectDbContext : AbpZeroDbContext<Tenant, Role, User, M
     }
 
     public DbSet<Person> People { get; set; }
+    public DbSet<Book> Books { get; set; }
+
 }
